@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@layer utilities {
+    .button-operators {
+        flex: 1 1 0%;
+        background-color: #DB2777;
+        font-weight: 700;
+    }
+    .button-digits {
+        flex: 1 1 33.333%;
+        max-width: 33.333%;
+        background-color: #111827;
+    }
+    @variants hover {
+        .opacity-variant {
+            opacity: 0.9;
+        }
+    }
+}
+
+
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background-color: gainsboro;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 16px ;
+    cursor: pointer;
+    transition: 0.4s;
+} 
